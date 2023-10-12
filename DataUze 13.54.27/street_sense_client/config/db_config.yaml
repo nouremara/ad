@@ -1,0 +1,18 @@
+# Datenbank-Konfiguration
+database:
+  host: localhost
+  port: 5432
+  user: nour
+  password: 123
+  dbname: Streetsense
+
+# Kafka-Konfiguration
+kafka:
+  bootstrap_servers:
+    - "localhost:9092"
+  producer:
+    acks: "all"
+    retries: 3
+  consumer:
+    group_id: "your_consumer_group"
+    auto_offset_reset: "earliest"
